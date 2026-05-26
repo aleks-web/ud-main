@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Тест</title>
+    </head>
+
+  <body class="group/body flex flex-col pt-2 before:transition-colors">
+
+    <!-- Start Header -->
+    <div class="bg-white z-100 top-0 sticky">
+      <div class="container bg-white w-full py-2 flex justify-between items-center gap-4 md:py-4">
+
+        <!-- Start Logo -->
+        <div class="flex justify-center items-center gap-2 xl:gap-4">
+          {Сюда картинка}
+          <div class="font-extrabold uppercase flex-col flex text-[12px] sm:hidden md:flex xl:text-lg">
+            <span>Цифровая</span>
+            <span>стоматология</span>
+          </div>
+        </div>
+        <!-- END Logo -->
+
+        <!-- Start City -->
+        <div class="hidden gap-2 items-center xl:flex lg:gap-4">
+          {Сюда картинка}
+
+          <div>
+            <div class="font-semibold text-sm lg:text-[18px]">Екатеринбург</div>
+            <div class="font-semibold text-[11px] text-[#2D2D2D] opacity-95 lg:text-[14px] max-w-[250px] 2xl:max-w-full">ул. Серова, д. 45  ●  ул. Сулимова, 53а  ●  ул. Добролюбова, 16/2</div>
+          </div>
+        </div>
+        <!-- END City -->
+
+        <!-- Start Info -->
+        <div class="hidden gap-2 items-center sm:flex lg:gap-4">
+          {Сюда картинка}
+          <div>
+            <div class="font-semibold text-sm lg:text-[18px]">+7 (922) 393-55-88</div>
+            <div class="font-semibold text-[11px] text-[#2D2D2D] opacity-95 lg:text-[14px]">Ежедневно 09:00-21:00</div>
+          </div>
+        </div>
+        <!-- END Info -->
+
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start footer -->
+    <footer class="text-xl">
+        <div class="flex flex-col items-center gap-2 text-center mb-4 xl:flex-row xl:flex-row xl:justify-center xl:gap-6">
+            <a href="/" class="border-b" data-politic-link>Политика конфиденциальности</a>
+            <a href="/" class="border-b" data-politic-link>Условия обслуживания</a>
+            <a href="/" class="border-b" data-politic-link>Настройки куки</a>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Start modal call -->
+    <div id="modal-call" style="display: none;" >
+        <h2 class="font-medium text-[20px] max-w-[300px] mx-auto text-center leading-6 mb-4 sm:text-[24px] sm:leading-8 md:text-[28px] md:max-w-[600px]">Рассчитайте стоимость лечения за 1 минуту</h2>
+
+        <img class="relative top-12" src="/src/images/phone-bg.webp" alt="phone-bg">
+
+        <form action="#" method="POST" class="max-w-[500px] mx-auto rounded-[16px] overflow-hidden">
+
+            <div class="spin"><div class="spinner"></div></div>
+
+            <div class="top-control flex items-center justify-between mt-6 hidden">
+
+                <div class="qz-progress flex items-center gap-2" style="--progress-width: 100%">
+                    <div class="active [.active]:bg-[#84C4EC] w-[38px] h-[10px] rounded-full bg-[#B4B3AA]"></div>
+                    <div class="[.active]:bg-[#84C4EC] w-[38px] h-[10px] rounded-full bg-[#B4B3AA] active"></div>
+                    <div class="[.active]:bg-[#84C4EC] w-[38px] h-[10px] rounded-full bg-[#B4B3AA] active"></div>
+                    <div class="[.active]:bg-[#84C4EC] w-[38px] h-[10px] rounded-full bg-[#B4B3AA] active"></div>
+                </div>
+
+                <div class="bg-white rounded-full w-12 md:w-16 aspect-square flex items-center justify-center cursor-pointer qz-next disable">
+                    <svg class="w-[12px] h-[22px] md:w-[17px] md:h-[29px]" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="#svg-arrow"></use>
+                    </svg>
+                </div>
+
+            </div>
+
+            <div class="bg-[#FFDA57] relative z-10 p-4 flex flex-col gap-4">
+                <div class="text-[18px]">Введите номер, на который отправить расчёт, и закрепите за собой бесплатный 3D-снимок</div>
+
+                <div class="w-full border rounded-2xl p-3 text-[22px] flex items-center gap-2 bg-white overflow-hidden">
+                    <svg class="min-w-6" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.0265 12.7161L13.9098 12.4745C13.6609 12.4452 13.4087 12.4728 13.172 12.5551C12.9353 12.6373 12.7203 12.7722 12.5432 12.9495L11.0098 14.4828C8.64433 13.2794 6.72155 11.3567 5.51817 8.99115L7.05983 7.44948C7.41817 7.09115 7.59317 6.59115 7.53483 6.08281L7.29317 3.98281C7.2461 3.57622 7.05105 3.20117 6.74522 2.92914C6.43938 2.65712 6.04414 2.50715 5.63483 2.50781H4.19317C3.2515 2.50781 2.46817 3.29115 2.5265 4.23281C2.96817 11.3495 8.65983 17.0328 15.7682 17.4745C16.7098 17.5328 17.4932 16.7495 17.4932 15.8078V14.3661C17.5015 13.5245 16.8682 12.8161 16.0265 12.7161Z" fill="#191A22"></path>
+                    </svg>
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" class="focus:outline-none max-w-[calc(100%_-_40px)]" data-mask-phone>
+                </div>
+
+                <button type="submit" class="2xl:max-w-full hover:bg-[#536df8] bg-[#768BF8] transition-colors text-white p-3 rounded-2xl w-full font-bold mr-auto cursor-pointer">Оставить заявку</button>
+            </div>
+
+        </form>
+    </div>
+    <!-- End modal call -->
+
+    <script src="https://test1.ud-core.ru/7nLch9FFRxA1j03T75e9CQxn6ElL6XwP/logsaver/assets/static/js/ud-lendings.min.js?1" defer async></script>
+    <script src="https://data.tech-ud72.ru/assets/static/js/ud-lendings.min.js?1" defer async></script>
+    <script type="module" src="/src/js/main.js" defer></script>
+  </body>
+</html>

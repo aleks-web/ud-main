@@ -1,0 +1,35 @@
+.fancybox__container {
+  --fancybox-backdrop-bg: rgb(0 0 0 / 0.40) !important;
+}
+
+.fancybox__dialog {
+  .f-html {
+    padding: 65px 20px 20px 20px;
+    background-color: #F3F2EA;
+    width: 100%;
+    border-radius: 32px;
+    max-width: 400px;
+  }
+
+  .f-button.is-close-button {
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+
+    &:hover {
+      background-color: #768BF8;
+
+      svg {
+        stroke: white;
+      }
+    }
+
+    svg {
+      stroke: black;
+      transition: all;
+    }
+  }
+}

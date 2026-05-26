@@ -1,0 +1,21 @@
+@use "spin";
+@use "btns";
+@use "modals";
+@use "font";
+
+.combined-scrolling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #6c757d;
+  color: #fff;
+  padding: 20px;
+}
+
+.horizontal-text {
+  animation: scroll-horizontal 8s linear infinite;
+}
+
+.vertical-text {
+  animation: scroll-vertical 6s linear infinite;
+}
